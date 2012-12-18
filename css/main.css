@@ -675,13 +675,13 @@ h1 {
 
 #container {
   width: 960px;
-  margin: 30px auto 60px auto;
-  background: #fff; }
+  margin: 30px auto 60px auto; }
 
 .perspective {
   padding: 20px;
   position: relative;
-  box-shadow: 0 0px 30px #333; }
+  box-shadow: 0 0px 30px #333;
+  background: #fff; }
   .perspective h1 {
     position: absolute; }
   .perspective h1,
@@ -709,3 +709,6 @@ h1 {
     -webkit-transform: perspective(1000px) rotateX(-12deg) rotateY(19deg) rotateZ(1.5deg); }
   .perspective.paris h1 a:hover {
     color: #f6f6f6; }
+
+.perspective + .perspective {
+  margin-top: 60px; }

@@ -23,7 +23,7 @@ h1 {
 .perspective {
 	padding: 20px;
 	position: relative;
-	box-shadow: 0 0px 30px #333;
+	@include box-shadow(0 0px 30px #333);
 	background: #fff;
 
 	h1 {
@@ -48,9 +48,7 @@ h1 {
 		}
 	}
 
-
 	// Photo-specific styles
-
 	&.newyork {
 
 		h1 {
@@ -59,7 +57,7 @@ h1 {
 			left: 231px;
 
 			// perspective
-			-webkit-transform: perspective(500px) rotateX(-3deg) rotateY(-29deg);
+			@include transform(perspective(500px) rotateX(-3deg) rotateY(-29deg));
 		}
 	}
 
@@ -78,9 +76,8 @@ h1 {
 			top: 123px;
 			left: 184px;
 
-			//-webkit-transform: perspective(1000px) rotateX(-12deg) rotateY(27deg) rotateZ(3.5deg);
-			-webkit-transform: perspective(1000px) rotateX(-12deg) rotateY(19deg) rotateZ(1.5deg);
-
+			// perspective
+			@include transform(perspective(1000px) rotateX(-12deg) rotateY(19deg) rotateZ(1.5deg));
 		}
 
 		h1 a:hover {

@@ -680,7 +680,8 @@ h1 {
 .perspective {
   padding: 20px;
   position: relative;
-  box-shadow: 0 0px 30px #333;
+  -webkit-box-shadow: 0 0px 30px #333333;
+  box-shadow: 0 0px 30px #333333;
   background: #fff; }
   .perspective h1 {
     position: absolute; }
@@ -697,7 +698,11 @@ h1 {
   .perspective.newyork h1 {
     top: 274px;
     left: 231px;
-    -webkit-transform: perspective(500px) rotateX(-3deg) rotateY(-29deg); }
+    -webkit-transform: perspective(500px) rotateX(-3deg) rotateY(-29deg);
+    -moz-transform: perspective(500px) rotateX(-3deg) rotateY(-29deg);
+    -ms-transform: perspective(500px) rotateX(-3deg) rotateY(-29deg);
+    -o-transform: perspective(500px) rotateX(-3deg) rotateY(-29deg);
+    transform: perspective(500px) rotateX(-3deg) rotateY(-29deg); }
   .perspective.paris h1,
   .perspective.paris h1 a {
     font-size: 145px;
@@ -706,7 +711,11 @@ h1 {
   .perspective.paris h1 {
     top: 123px;
     left: 184px;
-    -webkit-transform: perspective(1000px) rotateX(-12deg) rotateY(19deg) rotateZ(1.5deg); }
+    -webkit-transform: perspective(1000px) rotateX(-12deg) rotateY(19deg) rotateZ(1.5deg);
+    -moz-transform: perspective(1000px) rotateX(-12deg) rotateY(19deg) rotateZ(1.5deg);
+    -ms-transform: perspective(1000px) rotateX(-12deg) rotateY(19deg) rotateZ(1.5deg);
+    -o-transform: perspective(1000px) rotateX(-12deg) rotateY(19deg) rotateZ(1.5deg);
+    transform: perspective(1000px) rotateX(-12deg) rotateY(19deg) rotateZ(1.5deg); }
   .perspective.paris h1 a:hover {
     color: #f6f6f6; }
 

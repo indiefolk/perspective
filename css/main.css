@@ -702,7 +702,7 @@ h1 {
   .perspective.paris h1 a {
     font-size: 145px;
     color: #f6f6f6;
-    text-shadow: 1px 1px #666; }
+    text-shadow: -2px 0px #666666; }
   .perspective.paris h1 {
     top: 123px;
     left: 184px;

@@ -17,7 +17,7 @@ h1 {
 
 #container {
     width: 960px;
-    margin: 0 auto 60px auto;
+    margin: 30px auto 60px auto;
     background: #fff;
 }
 
@@ -29,11 +29,6 @@ h1 {
 	h1 {
 		// position
 		position: absolute;
-		top: 274px;
-		left: 231px;
-
-		// perspective
-		-webkit-transform: perspective(500px) rotateX(-3deg) rotateY(-29deg);
 	}
 
 	h1,
@@ -41,7 +36,7 @@ h1 {
 		// font style
 		font-size: 140px;
 		text-shadow: 1px 1px #838383;
-		letter-spacing: -7px;
+		letter-spacing: -6px;
 		color: #ddd;
 	}
 
@@ -50,6 +45,46 @@ h1 {
 
 		&:hover {
 			color: #fff;
+		}
+	}
+
+
+	// Photo-specific styles
+
+	&.newyork {
+
+		h1 {
+			// position
+			top: 274px;
+			left: 231px;
+
+			// perspective
+			-webkit-transform: perspective(500px) rotateX(-3deg) rotateY(-29deg);
+		}
+	}
+
+	&.paris {
+
+		h1,
+		h1 a {
+			// font style
+			font-size: 145px;
+			color: #f6f6f6;
+			text-shadow: 1px 1px #666;
+		}
+
+		h1 {
+			// position
+			top: 123px;
+			left: 184px;
+
+			//-webkit-transform: perspective(1000px) rotateX(-12deg) rotateY(27deg) rotateZ(3.5deg);
+			-webkit-transform: perspective(1000px) rotateX(-12deg) rotateY(19deg) rotateZ(1.5deg);
+
+		}
+
+		h1 a:hover {
+			color: #f6f6f6;
 		}
 	}
 }

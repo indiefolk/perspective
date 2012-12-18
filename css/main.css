@@ -675,7 +675,7 @@ h1 {
 
 #container {
   width: 960px;
-  margin: 0 auto 60px auto;
+  margin: 30px auto 60px auto;
   background: #fff; }
 
 .perspective {
@@ -683,17 +683,29 @@ h1 {
   position: relative;
   box-shadow: 0 0px 30px #333; }
   .perspective h1 {
-    position: absolute;
-    top: 274px;
-    left: 231px;
-    -webkit-transform: perspective(500px) rotateX(-3deg) rotateY(-29deg); }
+    position: absolute; }
   .perspective h1,
   .perspective h1 a {
     font-size: 140px;
     text-shadow: 1px 1px #838383;
-    letter-spacing: -7px;
+    letter-spacing: -6px;
     color: #ddd; }
   .perspective h1 a {
     text-decoration: none; }
     .perspective h1 a:hover {
       color: #fff; }
+  .perspective.newyork h1 {
+    top: 274px;
+    left: 231px;
+    -webkit-transform: perspective(500px) rotateX(-3deg) rotateY(-29deg); }
+  .perspective.paris h1,
+  .perspective.paris h1 a {
+    font-size: 145px;
+    color: #f6f6f6;
+    text-shadow: 1px 1px #666; }
+  .perspective.paris h1 {
+    top: 123px;
+    left: 184px;
+    -webkit-transform: perspective(1000px) rotateX(-12deg) rotateY(19deg) rotateZ(1.5deg); }
+  .perspective.paris h1 a:hover {
+    color: #f6f6f6; }
